@@ -2,7 +2,6 @@
 
 [VietNamNet](https://vietnamnet.vn/) news crawler that extracts article titles and content for various categories.
 
-<hr>
 
 ## Installation
 
@@ -26,7 +25,6 @@ $ venv\Scripts\activate
 ```bash
 $ pip install -r requirements.txt
 ```
-<hr>
 
 ## Configuration
 Modifying your crawler configuration file `config.py` to customize your crawling progress.
@@ -38,7 +36,6 @@ number_of_articles = 10  # Number of articles to crawl for each category
 ```
 By default, the configuration will crawl 10 articles for each category listed in the `categories` variable, resulting in a total of 50 crawled articles. You can adjust `number_of_articles` to crawl more articles or modify the `categories` variable to crawl specific categories.
 
-<hr>
 
 ## Usage
 - Run the crawler:
