@@ -30,7 +30,7 @@ $ pip install -r requirements.txt
 Modifying your crawler configuration file `config.py` to customize your crawling progress.
 
 ```python
-# Supported categories: 'thoi-su', 'kinh-doanh', 'van-hoa', 'giao-duc', 'the-gioi'
+# Supported categories: 'thoi-su', 'kinh-doanh', 'van-hoa', 'giao-duc', 'the-gioi', 'the-thao', 'giai-tri', 'doi-song', 'suc-khoe'
 categories = ['thoi-su', 'kinh-doanh', 'van-hoa', 'giao-duc', 'the-gioi'] 
 number_of_articles = 10  # Number of articles to crawl for each category
 ```
@@ -105,4 +105,8 @@ Vị trí sạc xe điện cũng cần ngăn cách với khu vực để xe đ�
 ...
 
 ```
-Check the `result` folder for the full example.
+Check the `result` folder for the [full example.](https://github.com/ptthanh02/VN_NewsCrawler/blob/main/result/50baibao.txt)
+
+## Completed Code Available
+
+Now, you can run [the crawler](https://github.com/ptthanh02/VN_NewsCrawler/blob/main/completed_code/crawler_full.ipynb) with [Jupyter Notebook](https://jupyter.org/) available in the `completed_code` folder and customize the crawler to your liking.
