@@ -12,7 +12,12 @@ categories_mapping = {
     'kinh-doanh': 'Kinh Doanh',
     'van-hoa': 'Văn Hóa',
     'giao-duc': 'Giáo Dục',
-    'the-gioi': 'Thế Giới'
+    'the-gioi': 'Thế Giới',
+    'the-thao': 'Thể Thao',
+    'giai-tri': 'Giải Trí',
+    'chinh-tri': 'Chính Trị',
+    'doi-song': 'Đời Sống',
+    'suc-khoe': 'Sức Khỏe'
 }
 
 def get_article_links(base_url, url, max_articles):

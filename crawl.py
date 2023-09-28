@@ -10,8 +10,8 @@ def main():
         progress_bar.set_description(f'Processing category: {category}')
         crawler.crawl_and_save_articles([category], file_name, number_of_articles)
         progress_bar.update(1)
-    print("\nDone!")
     progress_bar.close()
+    print("Done!")
 
 if __name__ == "__main__":
     main()
