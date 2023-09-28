@@ -6,7 +6,7 @@
 
 ## Installation
 
-Requires Python 3.8 or higher.
+Requires Python 3.11 or higher.
 
 - Clone this repository: 
 ```bash
@@ -108,4 +108,4 @@ Vị trí sạc xe điện cũng cần ngăn cách với khu vực để xe đ�
 ...
 
 ```
-Check the result folder for the full example.
+Check the `result` folder for the full example.
