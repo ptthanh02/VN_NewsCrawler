@@ -4,7 +4,7 @@ from urllib.parse import urljoin
 from config import categories, number_of_articles
 import os
 
-base_url = 'https://git init.vn/'
+base_url = 'https://vietnamnet.vn/'
 number_of_all_articles = len(categories) * number_of_articles
 file_name = f"{number_of_all_articles}baibao.txt"
 categories_mapping = {
