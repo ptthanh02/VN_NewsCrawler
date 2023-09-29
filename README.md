@@ -53,7 +53,7 @@ By default, the configuration will crawl 10 articles for each category listed in
 ## Usage
 - Run the crawler:
 ```bash
-$ python crawler.py
+$ python crawl.py
 ```
 
 ## Example Results
