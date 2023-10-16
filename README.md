@@ -30,17 +30,30 @@ $ pip install -r requirements.txt
 Modifying your crawler configuration file `config.py` to customize your crawling progress.
 
 ```python
-# Supported categories: 'thoi-su', 'kinh-doanh', 'van-hoa', 'giao-duc', 'the-gioi', 'the-thao', 'giai-tri', 'doi-song', 'suc-khoe'
 categories = ['thoi-su', 'kinh-doanh', 'van-hoa', 'giao-duc', 'the-gioi'] 
 number_of_articles = 10  # Number of articles to crawl for each category
 ```
 By default, the configuration will crawl 10 articles for each category listed in the `categories` variable, resulting in a total of 50 crawled articles. You can adjust `number_of_articles` to crawl more articles or modify the `categories` variable to crawl specific categories.
 
+#### Supported categories:
+| **Categories**  | **Categories's Names**        |
+| ----------- | ----------- |
+| 'thoi-su'   | Thời Sự     |
+| 'kinh-doanh'| Kinh Doanh  |
+| 'van-hoa'   | Văn Hóa     |
+| 'giao-duc'  | Giáo Dục    |
+| 'the-gioi'  | Thế Giới    |
+| 'the-thao'  | Thể Thao    |
+| giai-tri'   | Giải Trí    |
+| 'doi-song'  | Đời Sống    |
+| 'suc-khoe'  | Sức Khỏe    |
+
+
 
 ## Usage
 - Run the crawler:
 ```bash
-$ python crawler.py
+$ python crawl.py
 ```
 ## Results
 
