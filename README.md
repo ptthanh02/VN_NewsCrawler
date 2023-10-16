@@ -48,8 +48,6 @@ By default, the configuration will crawl 10 articles for each category listed in
 | 'doi-song'  | Đời Sống    |
 | 'suc-khoe'  | Sức Khỏe    |
 
-
-
 ## Usage
 - Run the crawler:
 ```bash
@@ -58,6 +56,8 @@ $ python crawl.py
 ## Results
 
 The crawler will automatically create a `result` folder and store the crawled articles in the following directory structure:
+
+![Result](result/result.png)
 
 - The `result` folder contains subdirectories for each news category.
 - Each category folder stores articles related to that specific category.
