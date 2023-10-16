@@ -2,11 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from config import categories, number_of_articles
-import os
 
 base_url = 'https://vietnamnet.vn/'
 number_of_all_articles = len(categories) * number_of_articles
-file_name = f"{number_of_all_articles}baibao.txt"
 categories_mapping = {
     'thoi-su': 'Thời Sự',
     'kinh-doanh': 'Kinh Doanh',
@@ -63,23 +61,3 @@ def get_article_content(links):
         }
         articles.append(article)
     return articles
-
-def crawl_and_save_articles(categories, file_name, number_of_articles):
-    result_directory = "result"
-    if not os.path.exists(result_directory):
-        os.makedirs(result_directory)
-    
-    result_file_path = os.path.join(result_directory, file_name)
-    with open(result_file_path, 'a', encoding='utf-8') as f:
-        for category in categories:
-            count = 1
-            mapped_category = categories_mapping.get(category, category)
-            f.write(f"------------------------ Thể loại: {mapped_category} --------------------------\n")
-            url = urljoin(base_url, category)
-            links = get_article_links(base_url, url, number_of_articles)
-            articles = get_article_content(links)
-            for article in articles:
-                f.write(f"Bài báo thứ {count}: \n")
-                f.write(f"Tiêu đề: {article['title']}\nNội dung: {article['content']}\n")
-                f.write('--------------------------------------------------\n')
-                count += 1
