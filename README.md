@@ -1,7 +1,6 @@
 ﻿# VN_NewsCrawler (2023)
 
-[VietNamNet](https://vietnamnet.vn/) news crawler that extracts article titles and content for various categories.
-
+[VietNamNet](https://vietnamnet.vn/) news crawler is a Python-based web scraping tool designed to extract articles from [VietNamNet](https://vietnamnet.vn/) and store them in an organized manner. This project is intended for educational purposes and demonstrates how to scrape news articles from a website, categorize them, and save the content to separate text files.
 
 ## Installation
 
@@ -11,7 +10,6 @@ Requires Python 3.8 or higher.
 ```bash
 $ git clone https://github.com/ptthanh02/VN_NewsCrawler.git
 ```
-
 - Navigate to the project directory:
 ```bash
 $ cd VN_NewsCrawler
