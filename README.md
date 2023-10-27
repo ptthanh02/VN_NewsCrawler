@@ -183,7 +183,7 @@ Cấu trúc này giúp cho việc sắp xếp và truy xuất các bài báo đ�
 
 ## Mã Nguồn Hoàn Chỉnh
 
-Nếu bạn muốn dùng **VN_NewsCrawler** trên Notebook, bạn có thể lấy code hoàn chỉnh[tại đây](https://github.com/ptthanh02/VN_NewsCrawler/blob/main/completed_code/crawler_full.ipynb). Bạn có thể tùy biến crawler lấy dữ liệu theo nhu cầu riêng của mình.
+Nếu bạn muốn dùng **VN_NewsCrawler** trên Notebook, bạn có thể lấy code hoàn chỉnh [tại đây](https://github.com/ptthanh02/VN_NewsCrawler/blob/main/completed_code/crawler_full.ipynb). Bạn có thể tùy biến crawler lấy dữ liệu theo nhu cầu riêng của mình.
 
 Chúc bạn có những trải nghiệm cào dữ liệu thú vị!
 </details>
