@@ -6,6 +6,7 @@ from config import categories, number_of_articles
 base_url = 'https://vietnamnet.vn/'
 number_of_all_articles = len(categories) * number_of_articles
 categories_mapping = {
+    'chinh-tri': 'Chính Trị',
     'thoi-su': 'Thời Sự',
     'kinh-doanh': 'Kinh Doanh',
     'van-hoa': 'Văn Hóa',
@@ -15,7 +16,8 @@ categories_mapping = {
     'giai-tri': 'Giải Trí',
     'chinh-tri': 'Chính Trị',
     'doi-song': 'Đời Sống',
-    'suc-khoe': 'Sức Khỏe'
+    'suc-khoe': 'Sức Khỏe',
+    'thong-tin-truyen-thong': 'Thông tin và Truyền thông'
 }
 
 def get_article_links(base_url, url, max_articles):
@@ -43,21 +45,31 @@ def get_article_content(links):
     Returns a list of article content from the given links.
     """
     articles = []
-    for link in links:
-        response = requests.get(link)
-        soup = BeautifulSoup(response.content, 'html.parser')
-        find_content = soup.find('div', class_='main-v1 bg-white')
-        title = find_content.find('h1', class_='content-detail-title').get_text()
-        content = find_content.find('div', class_='maincontent main-content')
-        if content is None:
-            content = find_content.find('div', class_='maincontent main-content content-full-image content-full-image-v1')
-        if content:
-            content_text = content.get_text()
-        else:
-            content_text = "Can't get content"
-        article = {
-            "title": title,
-            "content": content_text
-        }
-        articles.append(article)
-    return articles
+    newline_regex = re.compile(r'\n+')
+    for link_number, link in enumerate(links, start=1):
+        try:
+            response = requests.get(link)
+            response.raise_for_status() 
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            find_content = soup.find('div', class_='main-v1 bg-white')
+            if find_content:
+                title_raw = find_content.find('h1', class_='content-detail-title')
+                title = title_raw.get_text() if title_raw else ""
+                
+                content = find_content.find('div', class_='maincontent main-content') or \
+                          find_content.find('div', class_='maincontent main-content content-full-image content-full-image-v1')
+                content_text = content.get_text() if content else ""
+                content_text = newline_regex.sub('\n', content_text)
+                if title and content_text:
+                    article = {
+                        "title": title,
+                        "content": content_text
+                    }
+                    articles.append(article)
+                else:
+                    print(f"\nCannot find title or content for article number {link_number} ({link}), skipping...")
+            else:
+                print(f"\nCannot find content for article number {link_number} ({link}), skipping...")
+        except requests.exceptions.RequestException as e:
+            print(f"\nError fetching {link_number} {link}: {str(e)}")

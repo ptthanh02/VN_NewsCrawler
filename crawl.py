@@ -37,5 +37,3 @@ if __name__ == "__main__":
     main(categories, number_of_articles, progress_bar)
     progress_bar.close()
     print("Done!")
-    
-    
