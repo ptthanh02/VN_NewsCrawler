@@ -82,7 +82,7 @@ The **VN_NewsCrawler** will automatically create a `result` folder and store the
 - Each article is saved as an individual `.txt` file within its respective category folder.
 - The articles are uniquely named to prevent overwriting existing content.
 
-This structure ensures that the scraped articles are neatly organized and easily accessible, making it simple to locate and utilize the extracted information. Check the `result` folder for a [full example](https://github.com/ptthanh02/VN_NewsCrawler/blob/main/result/50baibao.txt).
+This structure ensures that the scraped articles are neatly organized and easily accessible, making it simple to locate and utilize the extracted information. Check the `result` folder for a [full example](https://github.com/ptthanh02/VN_NewsCrawler/tree/main/result).
 
 ## Completed Code Available
 
@@ -179,7 +179,7 @@ $ python crawl.py
 - Mỗi bài báo được lưu dưới dạng một tệp `.txt` riêng biệt trong thư mục con của nó.
 - Mỗi tệp `.txt` được đặt tên theo quy tắc sử dụng các số nguyên liên tiếp như `1.txt`, `2.txt`, `3.txt`,.. để tránh việc ghi đè nội dung đã có sẵn.
 
-Cấu trúc này giúp cho việc sắp xếp và truy xuất các bài báo được lấy dữ liệu một cách dễ dàng và hiệu quả. Bạn có thể xem thư mục `result` để xem ví dụ [hoàn chỉnh](https://github.com/ptthanh02/VN_NewsCrawler/blob/main/result/50baibao.txt).
+Cấu trúc này giúp cho việc sắp xếp và truy xuất các bài báo được lấy dữ liệu một cách dễ dàng và hiệu quả. Bạn có thể xem thư mục `result` để xem ví dụ [hoàn chỉnh](https://github.com/ptthanh02/VN_NewsCrawler/tree/main/result).
 
 ## Mã Nguồn Hoàn Chỉnh
 
