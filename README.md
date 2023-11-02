@@ -91,9 +91,8 @@ If you prefer to work with Notebook, you can find [the crawler](https://github.c
 Enjoy using **VN_NewsCrawler** for your web scraping needs, and feel free to contribute to the project's development. Happy scraping!
 
 
-<h3>
 <details>
-  <summary>👇 Tiếng Việt </summary>
+  <summary style="font-size: 1.5em; font-weight: bold; text-transform: uppercase;">👇 Tiếng Việt</summary>
   <hr>
 
 # VN_NewsCrawler (2023)
@@ -187,4 +186,3 @@ Nếu bạn muốn dùng **VN_NewsCrawler** trên Notebook, bạn có thể lấ
 
 Chúc bạn có những trải nghiệm cào dữ liệu thú vị!
 </details>
-</h3>  
