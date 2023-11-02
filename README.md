@@ -91,11 +91,11 @@ If you prefer to work with Notebook, you can find [the crawler](https://github.c
 Enjoy using **VN_NewsCrawler** for your web scraping needs, and feel free to contribute to the project's development. Happy scraping!
 
 
-
+<h3>
 <details>
-  <h3><summary>👇 Tiếng Việt </summary></h3>
+  <summary>👇 Tiếng Việt </summary>
   <hr>
-  
+</h3>  
 # VN_NewsCrawler (2023)
 
 **VN_NewsCrawler** là một công cụ cào dữ liệu dựa trên Python được thiết kế để trích xuất bài báo từ web [VietNamNet](https://vietnamnet.vn/) và tổ chức chúng một cách hiệu quả. Dự án này được thiết kế cho mục đích giáo dục và là một ví dụ thực tế về cách lấy dữ liệu từ các bài báo trên một trang web, phân loại chúng và lưu nội dung vào các tệp văn bản riêng biệt.
