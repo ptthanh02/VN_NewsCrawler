@@ -93,7 +93,7 @@ Enjoy using **VN_NewsCrawler** for your web scraping needs, and feel free to con
 
 
 <details>
-  <summary><h3>👇 Tiếng Việt</h3> </summary>
+  <summary>👇 Tiếng Việt </summary>
   <hr>
   
 # VN_NewsCrawler (2023)
